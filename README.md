@@ -6,7 +6,7 @@ Soy Juan Pellicer Garrido, estudiante de Ingeniería Matemática e Informática.
 
 ## Web publicada
 
-**URL:** [https://fito144.github.io/](https://fito144.github.io/)
+**URL:** [https://Fito144.github.io/](https://Fito144.github.io/)
 
 ## Contenido del portfolio
 

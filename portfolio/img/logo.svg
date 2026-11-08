@@ -1,0 +1,8 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <rect width="100" height="100" rx="18" fill="#06152F"></rect>
+    <path d="M18 22 Q48 -2 83 22" fill="none" stroke="#00A8FF" stroke-width="4" stroke-linecap="round"></path>
+    <text x="15" y="70" font-family="Arial, sans-serif" font-size="49" font-weight="bold" fill="#FFFFFF">J</text>
+    <text x="49" y="70" font-family="Arial, sans-serif" font-size="49" font-weight="bold" fill="#008CFF">P</text>
+    <path d="M17 79 Q49 105 84 76" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"></path>
+</svg>

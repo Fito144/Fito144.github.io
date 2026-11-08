@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto | Juan Pellicer</title>
+    <meta name="description" content="Contacta con Juan Pellicer a través del formulario de su portfolio personal para realizar consultas, propuestas o colaboraciones.">
+
+    <link rel="canonical" href="https://Fito144.github.io/contacto.html">
+
+    <meta property="og:title" content="Contacto | Juan Pellicer">
+    <meta property="og:description" content="Ponte en contacto con Juan Pellicer mediante el formulario de su portfolio personal.">
+    <meta property="og:image" content="https://Fito144.github.io/img/og-image.jpg">
+    <meta property="og:url" content="https://Fito144.github.io/contacto.html">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <a href="#contenido">Saltar al contenido</a>
+
+    <header>
+        <h1>Mi portfolio</h1>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido" tabindex="-1">
+
+        <h1>Contacto</h1>
+
+        <p>
+            Si quieres contactar conmigo para realizar un proyecto,
+            puedes rellenar el siguiente formulario.
+        </p>
+
+        <form method="post" action="#">
+
+            <fieldset>
+                <legend>Tus datos</legend>
+
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        required
+                        minlength="2"
+                        maxlength="60"
+                        autocomplete="name">
+                </p>
+
+                <p>
+                    <label for="email">Correo electrónico:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        autocomplete="email">
+                </p>
+
+                <p>
+                    <label for="empresa">Empresa u organización (opcional):</label>
+                    <input
+                        type="text"
+                        id="empresa"
+                        name="empresa"
+                        autocomplete="organization">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tu proyecto</legend>
+
+                <p>
+                    <label for="tipo">Tipo de proyecto:</label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="">Elige un tipo</option>
+
+                        <optgroup label="Web">
+                            <option value="pagina-web">Página web</option>
+                            <option value="tienda-online">Tienda online</option>
+                        </optgroup>
+
+                        <optgroup label="App">
+                            <option value="aplicacion-movil">Aplicación móvil</option>
+                            <option value="aplicacion-web">Aplicación web</option>
+                        </optgroup>
+
+                        <optgroup label="Otro">
+                            <option value="consultoria">Consultoría</option>
+                            <option value="otro">Otro proyecto</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+                <p>Modalidad de trabajo:</p>
+
+                <p>
+                    <input
+                        type="radio"
+                        id="remoto"
+                        name="modalidad"
+                        value="remoto"
+                        checked>
+                    <label for="remoto">Remoto</label>
+                </p>
+
+                <p>
+                    <input
+                        type="radio"
+                        id="presencial"
+                        name="modalidad"
+                        value="presencial">
+                    <label for="presencial">Presencial</label>
+                </p>
+
+                <p>
+                    <input
+                        type="radio"
+                        id="hibrido"
+                        name="modalidad"
+                        value="hibrido">
+                    <label for="hibrido">Híbrido</label>
+                </p>
+
+                <p>Servicios que necesitas:</p>
+
+                <p>
+                    <input
+                        type="checkbox"
+                        id="diseno"
+                        name="servicios"
+                        value="diseno">
+                    <label for="diseno">Diseño</label>
+                </p>
+
+                <p>
+                    <input
+                        type="checkbox"
+                        id="frontend"
+                        name="servicios"
+                        value="frontend">
+                    <label for="frontend">Front-end</label>
+                </p>
+
+                <p>
+                    <input
+                        type="checkbox"
+                        id="backend"
+                        name="servicios"
+                        value="backend">
+                    <label for="backend">Back-end</label>
+                </p>
+
+                <p>
+                    <label for="fecha">Fecha de inicio:</label>
+                    <input
+                        type="date"
+                        id="fecha"
+                        name="fecha"
+                        min="2026-11-8"
+                        required>
+                </p>
+
+                <p>
+                    <label for="mensaje">Cuéntame sobre tu proyecto:</label>
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        maxlength="500"
+                        required
+                        aria-describedby="ayuda-mensaje"></textarea>
+                    <small id="ayuda-mensaje">
+                        Cuéntame qué necesitas y para cuándo.
+                        Máximo 500 caracteres.
+                    </small>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Cómo te respondo</legend>
+
+                <p>Preferencia de respuesta:</p>
+
+                <p>
+                    <input
+                        type="radio"
+                        id="respuesta-email"
+                        name="respuesta"
+                        value="email"
+                        checked>
+                    <label for="respuesta-email">Email</label>
+                </p>
+
+                <p>
+                    <input
+                        type="radio"
+                        id="respuesta-telefono"
+                        name="respuesta"
+                        value="telefono">
+                    <label for="respuesta-telefono">Teléfono</label>
+                </p>
+
+                <p>
+                    <label for="telefono">Teléfono (opcional):</label>
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        pattern="[6-9][0-9]{8}"
+                        title="Introduce un teléfono de 9 cifras que empiece por 6, 7, 8 o 9."
+                        autocomplete="tel">
+                </p>
+
+                <p>
+                    <input
+                        type="checkbox"
+                        id="privacidad"
+                        name="privacidad"
+                        value="acepto"
+                        required>
+                    <label for="privacidad">
+                        He leído y acepto la política de privacidad.
+                    </label>
+                </p>
+            </fieldset>
+
+            <p>
+                <button type="submit">Enviar mensaje</button>
+                <button type="reset">Borrar</button>
+            </p>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>
+            Contacto:
+            <a href="mailto:juanpelgar@gmail.com">juanpelgar@gmail.com</a>
+        </p>
+
+        <p>
+            <a href="https://github.com/" target="_blank" rel="noopener">
+                Mi perfil de GitHub
+            </a>
+        </p>
+
+        <p>&copy; 2026 Mi portfolio. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
